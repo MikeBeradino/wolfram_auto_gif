@@ -1,10 +1,14 @@
 import pytumblr
+import random 
 
-def post2():         
-	consumer_key = 'RUaWiNZrnI4hrEGRV17NQr6DibEzJmBgSSWQOWBVfR0vL0Ugdw'
-	consumer_secret = 'v0iRisi0uGqgx9To3IP6kAs1umy8wzWx8ffwJ2vjcYoy3qbWe4'
-	token_key = 'CZYKEzCT8nZJfhC9vxFgMwzNbgREBeT8pjp0JbFraGWiwndDTt' 
-	token_secret = '4CO4oEhgrqVzTkQrLRfNKlhfU7rboOYyh72bpN0wQkBEPVqVLr'
+def post2():
+	print("++++++++++++++++++++")
+	print("posting now")
+	print("++++++++++++++++++++")         
+	consumer_key = 'xxxxxxxxxxxxxx'
+	consumer_secret = 'xxxxxxxxxxxxxx'
+	token_key = 'xxxxxxxxxxxxxx' 
+	token_secret = 'xxxxxxxxxxxxxx'
 
 	client = pytumblr.TumblrRestClient(
 		 	consumer_key,
@@ -12,5 +16,32 @@ def post2():
          	token_key,
          	token_secret
          	)
-	client.create_photo('wolframrules', state="published", tags=["gif"], data= ["wolf_1.gif","wolf_2.gif","wolf_1.gif","wolf_2.gif"])
-post2()
+	random_scale = random.randint(0,12)
+
+	if random_scale == 0:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_1.gif","gifs/wolf_2.gif","gifs/wolf_1.gif","gifs/wolf_2.gif"])
+	if random_scale == 1:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_2.gif","gifs/wolf_1.gif","gifs/wolf_2.gif","gifs/wolf_1.gif"])
+	if random_scale == 2:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_2.gif","gifs/wolf_l.gif","gifs/wolf_l.gif","gifs/wolf_l.gif"])
+	if random_scale == 3:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= "gifs/wolf_1.gif")
+	if random_scale == 4:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= "gifs/wolf_2.gif")
+	if random_scale == 5:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_1.gif","gifs/wolf_2.gif"])
+	if random_scale == 6:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_2.gif","gifs/wolf_1.gif"])
+	if random_scale == 7:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_1.gif","gifs/wolf_1.gif"])
+	if random_scale == 8:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_1.gif","gifs/wolf_1.gif","gifs/wolf_1.gif"])
+	if random_scale == 9:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_2.gif","gifs/wolf_2.gif","gifs/wolf_2.gif"])
+	if random_scale == 10:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_l.gif","gifs/wolf_r.gif"])
+	if random_scale == 11:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_l.gif","gifs/wolf_l.gif","gifs/wolf_l.gif","gifs/wolf_r.gif","gifs/wolf_r.gif","gifs/wolf_r.gif","gifs/wolf_l.gif","gifs/wolf_l.gif","gifs/wolf_l.gif"])
+	if random_scale == 12:
+		client.create_photo('wolframrules', state="published", tags=["gif","cellular automata","generative art","python","gifs"], data= ["gifs/wolf_1.gif","gifs/wolf_l.gif","gifs/wolf_l.gif","gifs/wolf_l.gif","gifs/wolf_r.gif","gifs/wolf_r.gif","gifs/wolf_r.gif","gifs/wolf_l.gif","gifs/wolf_l.gif","gifs/wolf_l.gif"])
+
