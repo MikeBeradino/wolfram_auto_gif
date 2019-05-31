@@ -13,7 +13,7 @@ Works with python 2.7
 Run with:
 python auto_gif.py
 
-In post2tumbler.py change the:
+In wolf_post.py change the:
 
 	consumer_key = 'xxxxxxxxxx'
 	consumer_secret = 'xxxxxxxxxx'
