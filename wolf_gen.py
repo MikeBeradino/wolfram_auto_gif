@@ -6,7 +6,6 @@ import random
 from random import randint as rint
 import argparse
 import os
-from resizeimage import resizeimage
 
 def main_art():
 	outputfile = ""
