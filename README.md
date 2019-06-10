@@ -11,7 +11,7 @@
 Works with python 2.7
 
 Run with:
-python auto_gif.py
+python wolf_auto.py
 
 In wolf_post.py change the:
 
