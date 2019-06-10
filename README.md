@@ -3,9 +3,10 @@
 
 ## Tumblr Gallery ==> https://wolframrules.tumblr.com/
 
-#####  Requires:
-######  PIL      ==> install with  pip install Pillow
-######  Pytumblr ==> install with  pip install pytumblr
+#####  Just use PIP to install dependencies:
+
+######  PIL      ==> install with pip install Pillow
+######  Pytumblr ==> install with pip install pytumblr
 
 
 Works with python 2.7
