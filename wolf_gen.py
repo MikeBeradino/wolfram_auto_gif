@@ -12,7 +12,7 @@ def main_art():
 	random_scale= random.randint(10,70)
 	width = int(random_scale)
 	height = int(random_scale)
-	rulenumber = int(18)
+	rulenumber = random.randint(2,18)
 	scalefactor = int(1)
 
 	size = 400 # output size squared
